@@ -1,0 +1,7 @@
+---
+# handlers file for outline-vpn-monitoring
+
+- name: "Restart Grafana container"
+  community.docker.docker_container:
+    name: grafana
+    state: started
